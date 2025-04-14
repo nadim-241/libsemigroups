@@ -1211,7 +1211,7 @@ namespace libsemigroups {
 
   // WordGraph - Exception helpers
   namespace word_graph {
-//! \brief Throws if the target of any edge is out of bounds.
+    //! \brief Throws if the target of any edge is out of bounds.
     //!
     //! This function throws if any target of any edge in \p wg is out of
     //! bounds (i.e. is greater than or equal to WordGraph::number_of_nodes,
@@ -1341,7 +1341,7 @@ namespace libsemigroups {
     void throw_if_node_out_of_bounds(WordGraph<Node> const& wg,
                                      Iterator1              first,
                                      Iterator2              last);
-  }
+  }  // namespace word_graph
 }  // namespace libsemigroups
 
 #include "word-graph.tpp"
